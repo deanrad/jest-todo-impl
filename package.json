@@ -2,9 +2,14 @@
   "name": "jest-todo-impl",
   "displayName": "jest-todo-impl",
   "description": "implement jest todos",
-  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lanmonster/jest-todo-impl.git"
+  },
+  "version": "1.0.0",
   "engines": {
-    "vscode": "^1.65.0"
+    "vscode": "^1.44.0"
   },
   "categories": [
     "Other"
@@ -13,14 +18,7 @@
     "*"
   ],
   "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "jest-todo-impl.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
+  "contributes": {},
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
