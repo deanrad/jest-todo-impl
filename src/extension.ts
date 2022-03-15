@@ -1,14 +1,8 @@
 import * as vscode from "vscode";
-import codeActionsProvider from "./codeActionsProvider";
+import { registerCodeActionsProvider } from "./impl";
 
-export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.languages.registerCodeActionsProvider(
-      [{ language: "typescript" }, { language: "javascript" }],
-      codeActionsProvider
-    )
-  );
+export function activate({ subscriptions }: vscode.ExtensionContext) {
+  subscriptions.push(registerCodeActionsProvider());
 }
 
-// this method is called when your extension is deactivated
 export function deactivate() {}
