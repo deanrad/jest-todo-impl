@@ -2,6 +2,7 @@
   "name": "jest-todo-impl",
   "displayName": "jest-todo-impl",
   "description": "implement jest todos",
+  "publisher": "KyleLanmon",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,7 +16,8 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:typescript",
+    "onLanguage:javascript"
   ],
   "main": "./out/extension.js",
   "contributes": {},
@@ -32,7 +34,7 @@
     "@types/mocha": "^9.1.0",
     "@types/node": "14.x",
     "@types/sinon": "^10.0.11",
-    "@types/vscode": "^1.65.0",
+    "@types/vscode": "^1.44.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vscode/test-electron": "^2.1.2",
