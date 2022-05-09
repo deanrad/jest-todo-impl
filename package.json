@@ -16,8 +16,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:typescript",
-    "onLanguage:javascript"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {},
